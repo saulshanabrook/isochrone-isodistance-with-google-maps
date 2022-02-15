@@ -67,8 +67,8 @@
 		<script type="text/javascript">
 			var marker = false,
 					polygon = false,
-					latitude = 48.858254,
-					longitude = 2.294563;
+					latitude = 42.58338294599082,
+					longitude = -72.61293048601911;
 			isochrone.load({
 				map: 'theMap',
 				key: 'AIzaSyBiXI0wEFG6kXw15S72CJuebdsMbeatSSw', // Do change the key: it won't work on your domain anyway :-)
@@ -106,8 +106,8 @@
 				isochrone.compute({
 					lat: latitude,
 					lng: longitude,
-					cycles: 5,
-					slices: 8,
+					cycles: 50,
+					slices: 25,
 					type: document.getElementById('typeDuration').checked ? 'duration' : 'distance',
 					value: parseFloat(document.getElementById(document.getElementById('typeDuration').checked ? 'durationValue' : 'distanceValue').value.replace(',', '.')),
 					mode: document.getElementById('modeWalking').checked ? 'walking' : (document.getElementById('modeBicycling').checked ? 'bicycling' : (document.getElementById('modeDriving').checked ? 'driving' : 'transit')),
