@@ -107,7 +107,7 @@
 					lat: latitude,
 					lng: longitude,
 					cycles: 20,
-					slices: 16,
+					slices: 24,
 					type: document.getElementById('typeDuration').checked ? 'duration' : 'distance',
 					value: parseFloat(document.getElementById(document.getElementById('typeDuration').checked ? 'durationValue' : 'distanceValue').value.replace(',', '.')),
 					mode: document.getElementById('modeWalking').checked ? 'walking' : (document.getElementById('modeBicycling').checked ? 'bicycling' : (document.getElementById('modeDriving').checked ? 'driving' : 'transit')),
